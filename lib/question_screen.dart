@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'answer_button.dart';
 import 'data/list_question.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class QuestionScreen extends StatefulWidget {
   const QuestionScreen({Key? key, required this.onSelectAnswer})
@@ -26,6 +25,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
   @override
   Widget build(BuildContext context) {
+    print(currentPositionQuestion);
     final currentQuestion = questions[currentPositionQuestion];
 
     return Container(
